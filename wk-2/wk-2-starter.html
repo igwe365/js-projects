@@ -14,18 +14,31 @@
 <script>
 //examples in slides
 // #1
-
+let myBoolean = true;
+let myNumber = 5;
+let mySecondNumber = 5.0;
+let myString = "peanuts and m&m's";
 
 // #2
-
+let a = 5;
+b = 10;
+// The above is not okay since you haven't declared b
 
 
 // #3
 
-
+let a = 5;
+a = 7;
+// you have already declared a and let lets you to reassign
 
 // #4
+var b = 5;
+b = 10;
+// this is not okay. we don't use var anymore
 
+// #5
+let myString = "gummy bears"
+myString = null;
 
 </script>
 <!-- 🔥🔥🔥🔥🔥🔥 start part 2 - lecture here javascript 🔥🔥🔥🔥🔥🔥 -->
@@ -36,21 +49,32 @@
     let c   = 15;
     const d = '5';
     let e   = 'my name';
-    const f = 'is liz';
+    const f = 'is Igwe';
 
     console.group('Addition');
 
+    console.log(a + b); //13
+    console.log (a + d); //105
+    console.log (e + ' ' + f); // my name is igwe
+    console.log(e += ' is the batman'); // my name is the batman
+   
     console.groupEnd();
 
     console.group('Multiplication');
+    console.log(a * 3); //30
+    console.log(a * b); //30
+    console.log(b * c); //45
 
     console.groupEnd();
 
-    a++;
+    a++; 
     b--;
     --b;
     c += a;
     console.group('Incrementing');
+    console.log(a); // 11
+    console.log(b); // 1
+    console.log(c); // 26
 
     console.groupEnd();  
 </script>
